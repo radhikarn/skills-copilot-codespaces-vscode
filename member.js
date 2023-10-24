@@ -1,10 +1,8 @@
-function skillMember() {
-    var member = document.getElementById("member");
-    var memberValue = member.options[member.selectedIndex].value;
-    var memberText = member.options[member.selectedIndex].text;
-    var memberData = {
-        value: memberValue,
-        text: memberText
+function skillsMember() {
+    return {
+        restrict: 'E',
+        templateUrl: 'templates/member/skills-member.html',
+        controller: 'SkillsMemberCtrl',
+        controllerAs: 'skillsMemberCtrl'
     };
-    return memberData;
 }
